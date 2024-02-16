@@ -83,7 +83,7 @@ button{
 }
 
 .displaying button{
-    background: url(./images/icon-minus.svg);
+    background: url(./images/icon-plus.svg);
     background-repeat:no-repeat;
     background-position-x: right;
 }
@@ -101,6 +101,7 @@ button{
     opacity: 0.9;
     font-weight: 400;
     margin-top: 5px;
+    display: none;
 }
 
 @media screen and (min-width: 376px){
