@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', Arial;
+}
+
+p{
+    font-size: 16px;
+}
+
+button{
+    font-size: 16px;
+    font-family: 'Work Sans', Arial;
+}
+
+#bg-main{
+    background: url(./images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container{
+    background-color: #fff;
+    max-width: 320px;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.007);
+}
+
+#header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#header img{
+    max-height: 30px;
+    margin: auto 0;
+}
+
+#header p{
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 5px 0 0 20px;
+}
+
+.question{
+    border-bottom: hsl(275, 100%, 97%) 1px solid;
+    cursor: pointer;
+}
+
+.question:last-of-type{
+    border: none;
+}
+
+.mainQ{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainQ button{
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0;
+    text-align: start;
+    padding: 0 40px 0 0;
+    background: url(./images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    min-height: 30px;
+    width: 100%;
+}
+
+.displaying button{
+    background: url(./images/icon-minus.svg);
+    background-repeat:no-repeat;
+    background-position-x: right;
+}
+
+.mainQ button:active, .mainQ button:hover, .mainQ button:focus{
+    color: hsl(292, 60%, 53%);
+}
+
+.mainQ img{
+    margin-left: 10px;
+}
+
+.answerQ p{
+    color: hsl(292, 16%, 49%);
+    opacity: 0.9;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 376px){
+    #bg-main{
+        background: url(./images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    #container{
+        width: fit-content;
+        max-width: 370px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 726px){
+    #container{
+        width: fit-content;
+        max-width: 510px;
+        border-radius: 10px;
+    }
+}
