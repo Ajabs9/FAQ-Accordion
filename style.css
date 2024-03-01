@@ -107,6 +107,8 @@ button{
     position: absolute;
     bottom: 20px;
     margin-inline: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .attribution a{
